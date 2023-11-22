@@ -1,0 +1,4 @@
+<android.telephony.TelephonyManager: java.lang.String getLine1Number()> -> _SOURCE_
+
+<android.content.Context: void sendBroadcast(android.content.Intent)> -> _SINK_
+
