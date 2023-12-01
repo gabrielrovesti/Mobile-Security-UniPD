@@ -1,0 +1,16 @@
+The lessons structure is:
+- a lesson dedicated to solve the challenges together (discuss and stuff) - not useful, the teacher will be present 
+but it's only to discuss with the few other people
+- a lesson dedicated to discuss and do the questionnaire on the recording the teacher puts for the week and where the
+solution of previous challenge will be discussed (also probably discussed the current ones to solve)
+
+It is advised to present at least once to get some bonus points (aka, solve a challenge and make slides about it). You tell
+teacher in advance the first of the two lessons, then on the second one you will present. 
+Advised structure: overview, resolving steps, flag part and security discussion.
+
+The exam will be two hours, having:
+- the theoretical part composed of 18 questions (1 hour)
+- 4 challenges (1 hour)
+
+Usually, there is no access to internet, but if there are sites that need to be accessed
+in the exam, the teacher will allow internet and will tell us the sites to use. 
