@@ -1,4 +1,0 @@
-<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)> -> _SINK_
-
-<android.app.Activity: android.content.Intent getIntent()> -> _SOURCE_
-
