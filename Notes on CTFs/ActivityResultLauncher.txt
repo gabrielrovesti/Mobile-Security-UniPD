@@ -1,0 +1,44 @@
+public void openActivityForResult() {
+    
+ //Instead of startActivityForResult use this one
+        Intent intent = new Intent(this,OtherActivity.class);
+        someActivityResultLauncher.launch(intent);
+    }
+
+
+//Instead of onActivityResult() method use this one
+
+    ActivityResultLauncher<Intent> someActivityResultLauncher = registerForActivityResult(
+            new ActivityResultContracts.StartActivityForResult(),
+            new ActivityResultCallback<ActivityResult>() {
+                @Override
+                public void onActivityResult(ActivityResult result) {
+                    if (result.getResultCode() == Activity.RESULT_OK) {
+                        // Here, no request code
+                        Intent data = result.getData();
+                        doSomeOperations();
+                    }
+                }
+            });
+
+// More general
+
+ActivityResultLauncher<Intent> someActivityResultLauncher =
+registerForActivityResult(
+ new ActivityResultContracts.StartActivityForResult(),
+ result -> {
+
+});
+
+// Inside onCreate or onStart, say the second one for instance
+@Override
+protected void onStart(){
+
+	//Explicit intent just for creation sake
+	Intent intent1 = new Intent();
+	intent1.setComponent(new ComponentName("com.example.victimapp", "com.example.victimapp.PartOne"));
+	
+	if(intent1.resolveActivity(getPackageManager()) != null){
+		someActivityResultLauncher.launch(intent);
+	}
+}
